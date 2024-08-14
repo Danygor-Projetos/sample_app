@@ -1,11 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Danygor Control Stock | Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="shortcut icon" href="../ascets/logo_Danygor.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/styleLogin.css">
+    <link rel="stylesheet" href="../styles/styleCreateLogin.css">
 </head>
+
 <body>
-    
+    <header>
+        <div class="logo"><a href="../code/home.html"><img src="../ascets/logo_Danygor.png" alt="logo"></a></div>
+        <h1>Danygor Stock</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Criar conta</h1>
+            <!-- Formulário de login principal. -->
+            <div class="form">
+                <form action="criarAcesso.php" method="post">
+                    <label for="">Nome*</label>
+                    <input type="text" name="nome" id="nome" required> <br>
+                    <label for="">E-mail*</label>
+                    <input type="email" name="email" id="email" required> <br>
+                    <label for="">Usuário*</label>
+                    <input type="text" name="usu" id="usu" required> <br>
+                    <label for="">Senha*</label>
+                    <input type="password" name="passW" id="passW" placeholder="8 digitos" maxlength="8" required>
+                    <input type="submit" name="send" id="sendBtn" value="Acessar">
+                    <p>Já possui conta? <a href="login.html">Clique aqui</a></p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="../scripts/script.js"></script>
 </body>
+
 </html>

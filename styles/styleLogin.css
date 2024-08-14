@@ -21,7 +21,13 @@ header {
 
 header img {
     width: 80px;
+    transition: all 1s ease;
 }
+
+header img:hover{
+    transform: scale(.9);
+}
+
 
 header h1 {
     font-family: "Grey Qo", cursive;
@@ -31,6 +37,9 @@ main {
     background-color: #c21233;
     height: calc(100% - 70px);
     font-family: "Poppins";
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main .container {
@@ -73,8 +82,8 @@ main .container {
     background-color: #fff;
     padding: 20px;
     border-radius: 15px;
-
 }
+
 
 .form h1 {
     color: #be0202;
@@ -85,7 +94,7 @@ main .container {
 .form form input {
     border: 1px solid gray;
     /* border-bottom: 1px solid gray; */
-    border-radius: 15px;
+    border-radius: 10px;
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -99,9 +108,18 @@ main .container {
     font-family: "Poppins";
     font-weight: 600;
     font-size: .9em;
-    margin-top: 10px;
+    border: none;
+    display: block;
+    margin: 15px auto;
 }
+
+.form form input#sendBtn:hover{
+    cursor: pointer;
+    background-color: #bbb124;
+}
+
 
 .form form p {
     font-size: .8rem;
+    text-align: center;
 }
