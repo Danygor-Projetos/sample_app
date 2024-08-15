@@ -24,7 +24,7 @@ header img {
     transition: all 1s ease;
 }
 
-header img:hover{
+header img:hover {
     transform: scale(.9);
 }
 
@@ -98,6 +98,7 @@ main .container {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
+    outline: none;
 }
 
 .form form input#sendBtn {
@@ -113,7 +114,7 @@ main .container {
     margin: 15px auto;
 }
 
-.form form input#sendBtn:hover{
+.form form input#sendBtn:hover {
     cursor: pointer;
     background-color: #bbb124;
 }
@@ -124,7 +125,7 @@ main .container {
     text-align: center;
 }
 
-.form form a{
+.form form a {
     text-decoration: none;
     color: black;
     font-weight: 600;
