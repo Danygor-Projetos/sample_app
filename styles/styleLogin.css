@@ -35,10 +35,11 @@ header h1 {
 
 main {
     background-color: #25282a;
-    height: calc(100% - 70px);
+    min-height: calc(100vh - 70px);
     font-family: "Poppins";
     display: flex;
     justify-content: center;
+    padding: 20px; 
 }
 
 main .container {
@@ -76,17 +77,19 @@ main .container {
 .main_info h2 {
     color: #fff;
     font-weight: 300;
-    
 }
 
 .main_info h1 {
     color: #fff;
     font-size: 4rem;
+    text-align: start;
+    
 }
 
 .main_info span {
     color: #c21233;
     font-size: 4rem;
+    font-weight: 700;
 }
 
 .main_info p {
@@ -161,11 +164,6 @@ main .container {
         text-align: center;
     }
 
-    main {
-        height: 100vh;
-        padding: 0;
-    }
-
     .main_info p {
         text-align: center;
     }
@@ -173,13 +171,11 @@ main .container {
     .main_info h1 {
         text-align: center;
         font-size: 3rem;
-
     }
 
     .main_info span {
         font-size: 3rem;
         margin-left: -50px;
-
     }
 
     .main_info h2 {
@@ -188,5 +184,9 @@ main .container {
 
     .logo-RH{
         display: none;
+    }
+
+    .form{
+        border: 1px solid black;
     }
 }
