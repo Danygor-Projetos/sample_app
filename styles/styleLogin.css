@@ -7,7 +7,7 @@
 body {
     width: 100%;
     height: 100vh;
-    font-size: 1rem;    
+    font-size: 1rem;
 }
 
 header {
@@ -39,7 +39,7 @@ main {
     font-family: "Poppins";
     display: flex;
     justify-content: center;
-    padding: 20px; 
+    /* padding: 20px; */
 }
 
 main .container {
@@ -48,26 +48,15 @@ main .container {
     gap: 50px;
     width: 80%;
     margin: 0 auto;
+    padding-block: 10px;
 
 }
 
-.logo-RH{
+.logo-RH {
     width: 110px;
-    position: absolute;
+
     top: 130px;
     animation: fly 8s ease-in-out infinite;
-}
-
-@keyframes fly{
-    0%{
-        transform: translateY(0);
-    }
-    50%{
-        transform: translateY(20px);
-    }
-    100%{
-        transform: translateY(0);
-    }
 }
 
 .main_info {
@@ -83,7 +72,7 @@ main .container {
     color: #fff;
     font-size: 4rem;
     text-align: start;
-    
+
 }
 
 .main_info span {
@@ -108,6 +97,11 @@ main .container {
     border-radius: 15px;
 }
 
+/* Mensagem e erro de senha incorreta */
+.erroSenha {
+    color: red;
+    display: none;
+}
 
 .form h1 {
     color: #c21233;
@@ -156,12 +150,18 @@ main .container {
     font-weight: 600;
 }
 
-@media screen and (max-width: 824px) {
+@media screen and (max-width: 835px) {
     main .container {
         flex-direction: column;
         gap: 20px;
         align-items: center;
         text-align: center;
+
+    }
+
+    main {
+
+        padding: 0;
     }
 
     .main_info p {
@@ -179,14 +179,49 @@ main .container {
     }
 
     .main_info h2 {
-        padding-top:20px ;
+        padding-top: 20px;
     }
 
-    .logo-RH{
+    .logo-RH {
         display: none;
     }
 
-    .form{
+    .form {
         border: 1px solid black;
+    }
+}
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: none;
+    /* Escondido por padrão */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.spinner {
+    border: 8px solid #f3f3f3;
+    /* Light grey */
+    border-top: 8px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }

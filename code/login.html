@@ -33,21 +33,17 @@
             <div class="form">
                 <h1>Login</h1>
                 <form action="loginAcesso.php" method="post">
-                    <label for="">Usuário</label>
-                    <input type="text" name="usu" id="usu" required> <br>
-                    <label for="">Senha</label>
+                    <label id="labelUsu">Usuário</label>
+                    <input type="text" class="usu" id="usu" required> <br>
+                    <label id="labelpassW">Senha</label>
                     <input type="password" name="passW" id="passW" required>
+                    <p class="erroSenha"> Dados incorretos. Tente novamente.</p>
                     <input type="submit" name="send" id="sendBtn" value="Acessar">
                     <p>Novo funcionário? <a href="createLogin.html">Clique aqui</a></p>
                 </form>
             </div>
         </div>
     </main>
-
-    <div class="oioi">
-        
-    </div>
-
     <script src="../scripts/script.js"></script>
 </body>
 
