@@ -16,7 +16,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 5px;
 }
 
 header img {
@@ -30,7 +30,7 @@ header img:hover {
 
 
 header h1 {
-    font-family: "Grey Qo", cursive;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 main {
@@ -61,6 +61,7 @@ main .container {
 
 .main_info {
     max-width: 50%;
+    
 }
 
 .main_info h2 {
@@ -71,8 +72,6 @@ main .container {
 .main_info h1 {
     color: #fff;
     font-size: 4rem;
-    text-align: start;
-
 }
 
 .main_info span {
@@ -160,8 +159,12 @@ main .container {
     }
 
     main {
-
         padding: 0;
+    }
+
+    .main_info{
+        text-align: center;
+        max-width: 100%;
     }
 
     .main_info p {
@@ -175,7 +178,7 @@ main .container {
 
     .main_info span {
         font-size: 3rem;
-        margin-left: -50px;
+        display: inline;
     }
 
     .main_info h2 {
