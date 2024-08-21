@@ -6,7 +6,7 @@ document.getElementById("sendBtn").addEventListener("click", function (event) {
     let passWErro = document.getElementById("passW");
     let erroSenha = document.querySelector(".erroSenha");
 
-    // Verifica se os campos estão vazios
+    // Verifica se os campos estão vazios.
     if (usuario.length == 0 || senha.length == 0) {
         alert("Você precisa preencher os campos solicitados.");
         erroSenha.style.display = "none";
