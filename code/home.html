@@ -4,53 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danyogor | Página Inicial</title>
-    <link rel="shortcut icon" href="../assets/logo_Danygor.png" type="image/x-icon">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="../styles/styleHome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Danygor Stock | Início</title>
 </head>
 
 <body>
-    <header>
-        <section id="home-logo">
-            <img src="../assets/logoRH.png" alt="logo red house">
-        </section>
-        <section class="header-options">
-
-            <section class="header-options-1">
-                <div class="home-icon">
-                    <img src="../assets/icons/home.png" alt="home icon">
-                    <p>Início</p>
-                </div>
-                <div class="dashboard-icon">
-                    <img src="../assets/icons/dashboard.png" alt="dashbpoard icon">
-                    <p>Dashboard</p>
-                </div>
-                <div class="sell-icon">
-                    <img src="../assets/icons/buy.png" alt="buy icon">
-                    <p>Vendas</p>
-                </div>
-                <div class="stock-icon">
-                    <img src="../assets/icons/in-stock.png" alt="Stock icon">
-                    <p>Estoque</p>
-                </div>
-                <div class="report-icon">
-                    <img src="../assets/icons/report.png" alt="report-icon">
-                    <p>Relatório</p>
-                </div>
-            </section>
-
-            <div class="border">
-
+    <header class="sidebar">
+        <!-- <div class="sidebar-logo">
+                <img src="../assets/logoRH.png" alt="logoRH">
+            </div> -->
+        <div class="sidebar-options">
+            <div class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="arrow ph-bold ph-stack"></i>
+                            <span>Produtos</span>
+                            <i class="arrow ph-bold ph-caret-down"></i>
+                        </a>
+                        <!-- <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Material Didático</a>
+                                </li>
+                            </ul> -->
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="arrow ph-bold ph-file-plus"></i>
+                            <span>Registrar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="arrow ph-bold ph-money"></i>
+                            <span>Vendas</span>
+                            <i class="arrow ph-bold ph-caret-down"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="arrow ph-bold ph-currency-dollar"></i>
+                            <span>Finanças</span>
+                            <i class="arrow ph-bold ph-caret-down"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
-
-            <section class="header-options-2">
-                <div class="config-icon">
-                    <img src="../assets/icons/setting.png" alt="settings icon">
-                    <p>Ajustes</p>
-                </div>
-            </section>
+            <div class="sidebar-settings">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="arrow ph-bold ph-gear"></i>
+                            <span>Configurações</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="arrow ph-bold ph-info"></i>
+                            <span>Ajuda</span>
+                            <i class="arrow ph-bold ph-caret-down"></i>
+                        </a>
+                    </li>
+                </ul>
+                <button id="open-sidebar"><i class="arrow ph-bold ph-caret-right"></i></button>
             </div>
+        </div>
     </header>
+
+    <main>
+        <main class="head">
+            <div class="social">
+                <div class="sidebar-logo">
+                    <img src="../assets/logoRH.png" alt="logoRH">
+                </div>
+            </div>
+        </main>
+    </main>
+
+    <script src="../scripts/scriptHomePage.js"></script>
+
 </body>
 
 </html>
