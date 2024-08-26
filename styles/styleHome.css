@@ -101,6 +101,15 @@ header ul li a span {
     margin-left: 20px;
 }
 
+.sub-menu {
+    font-size: .9rem;
+    margin-left: 40px;
+    display: none;
+}
+
+.sub-menu.show {
+    display: block;
+}
 
 
 main {

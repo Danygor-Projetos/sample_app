@@ -24,3 +24,22 @@ document.getElementById("lupa-search").addEventListener("click", function () {
     var lupinha = document.getElementById("lupa-search");
     input.focus();
 })
+
+// document.querySelector("#subMenu").addEventListener("click", function () {
+//     let abrir = document.querySelector(".sub-menu li")
+
+//     // var fechado = true;
+//     // var aberto = false;
+
+//     // if (true) {
+//     //     abrir.style.height = "";
+//     //     abrir.style.overflow = "";
+//     //     fechado = false;
+//     // }
+
+//     if (abrir.style.height != "100%" || abrir.style.overflow != "visible") {
+//         abrir.style.height = "100";
+//         abrir.style.overflow = "visible";
+//     }
+// })
+
