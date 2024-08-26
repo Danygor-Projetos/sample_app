@@ -32,7 +32,6 @@ header.sidebar {
     max-width: 70px;
     height: 100dvh;
     background-color: var(--color-white);
-    border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     padding-top: 20px;
     transition: all .5s;
@@ -102,24 +101,115 @@ header ul li a span {
     margin-left: 20px;
 }
 
+
+
 main {
     width: calc(100vh-70px);
     height: 100%;
+    font-family: "Nunito", sans-serif;
 }
 
-main.head{
+main.header {
     background-color: var(--color-white);
-    text-align: right;
+    height: 70px;
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 30px;
 }
 
-.social{
+.logo-main-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-main-header h1 {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.logo-main-header p {
+    font-size: .8em;
+    color: var(--color-cereja);
+    font-weight: 500;
+    font-style: italic;
+}
+
+.main-header-search {
+    position: relative;
+}
+
+.lupa {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+
+    cursor: pointer;
+    width: 30px;
+    font-weight: 600;
+}
+
+.main-header-search input {
+    width: 300px;
+    height: 40px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.281);
+    border-radius: 20px;
+    padding-left: 20px;
+    outline: none;
+}
+
+@media screen and (max-width: 708px) {
+    .main-header-search input {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        transition: all .2s;
+    }
+
+    .lupa {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .main-header-search input::placeholder {
+        opacity: 0;
+    }
+
+    main.header {
+        padding-inline: 10px;
+    }
+}
+
+/* @media screen and (max-width: 525px) {
     
+} */
+
+.main-header-search input::placeholder {
+    font-size: 1.1em;
 }
 
-main .sidebar-logo{
-    width: 44px;
+.header .logo-main-header img {
+    width: 50px;
 }
 
-main .sidebar-logo img{
+.main-header-account .account-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.main-header-account .account-avatar:hover {
+    box-shadow: 1px 1px 5px rgb(53, 53, 53);
+}
+
+.main-header-account .account-avatar img {
     width: 100%;
+    cursor: pointer;
 }

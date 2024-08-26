@@ -11,6 +11,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- ICONS -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- FONT  Nunito-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
     <title>Danygor Stock | Início</title>
 </head>
 
@@ -54,6 +63,12 @@
                             <i class="arrow ph-bold ph-caret-down"></i>
                         </a>
                     </li>
+                    <!-- <li>
+                        <a href="#">
+                            <i class="arrow ph-bold ph-magnifying-glass"></i>
+                            <span>Pesquisar</span>
+                        </a>
+                    </li> -->
                 </ul>
             </div>
             <div class="sidebar-settings">
@@ -76,15 +91,26 @@
             </div>
         </div>
     </header>
-
-    <main>
-        <main class="head">
-            <div class="social">
-                <div class="sidebar-logo">
-                    <img src="../assets/logoRH.png" alt="logoRH">
-                </div>
+    <main class="header">
+        <div class="logo-main-header">
+            <img src="../assets/logoRH.png" alt="logo red house">
+            <div class="text">
+                <h1>DANYGOR</h1>
+                <p>Red House</p>
             </div>
-        </main>
+        </div>
+
+        <div class="main-header-search">
+            <input type="search" id="searchInput" placeholder="Pesquisar">
+            <img src="../assets/search-icon.svg" alt="icon lupa" class="lupa" id="lupa-search">
+        </div>
+
+        <div class="main-header-account">
+            <div class="account-avatar">
+                <img src="../assets/pics/daniel.jpeg" alt="avatar account">
+            </div>
+
+        </div>
     </main>
 
     <script src="../scripts/scriptHomePage.js"></script>
